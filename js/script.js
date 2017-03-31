@@ -29,12 +29,12 @@ $(document).ready( function(){
 
 	// Load to page
 	for(i= 0; i < todo.length; i++){
-		$item = $("<tr class='row'> <td class='col-md-5 tick'> <input type='checkbox' id='check'> </td><td class='col-md-6 text'> "+ todo[i][0] + "</td> <td class='col-md-1 cross'> <button class='close'>&times;</button> </td> </tr>");
+		$item = $("<tr class='row'> <td class='col-md-5 tick'> <input type='checkbox' class='check'> </td><td class='col-md-6 text'> "+ todo[i][0] + "</td> <td class='col-md-1 cross'> <button class='close'>&times;</button> </td> </tr>");
 		$(".todo").append($item);
 	}
 	
 	for(i= 0; i < done.length; i++){
-		$item = $("<tr class='row'> <td class='col-md-5 tick'> <input type='checkbox' id='check' checked> </td><td class='col-md-6 text'> "+ done[i][0] + "</td> <td class='col-md-1 cross'> <button class='close'>&times;</button> </td> </tr>");
+		$item = $("<tr class='row'> <td class='col-md-5 tick'> <input type='checkbox' class='check' checked> </td><td class='col-md-6 text'> "+ done[i][0] + "</td> <td class='col-md-1 cross'> <button class='close'>&times;</button> </td> </tr>");
 		$(".done").append($item);
 	}
 
@@ -53,7 +53,7 @@ $(document).ready( function(){
 	        mg.add();
 	        // reload();
 	        console.log(todo);
-	        $item = $("<tr class='row'> <td class='col-md-5 tick'> <input type='checkbox' id='check'> </td><td class='col-md-6 text'> "+ todo[todo.length-1][0] + "</td> <td class='col-md-1 cross'> <button class='close'>&times;</button> </td> </tr>");
+	        $item = $("<tr class='row'> <td class='col-md-5 tick'> <input type='checkbox' class='check'> </td><td class='col-md-6 text'> "+ todo[todo.length-1][0] + "</td> <td class='col-md-1 cross'> <button class='close'>&times;</button> </td> </tr>");
 			$(".todo").append($item);
         }
     });
@@ -81,14 +81,14 @@ $(document).ready( function(){
 		// }
 		console.log("hullo");
 		console.log($('#check').prop('checked'));
-		if($('#check').prop('checked') === true) {
+		if($(this).find('.check').prop('checked') === true) {
 			//remove from todo
 			//append to done
 			var tr = $(this).closest('tr');
 			//tr.find("input[type='checkbox']").attr("checked",true);
 			tr.detach().appendTo($('.done'));
 		}
-		else if($('#check').prop('checked') === false){
+		else if($(this).find('.check').prop('checked') === false){
 			//remove from done
 			//append to todo
 			var tr = $(this).closest('tr');
