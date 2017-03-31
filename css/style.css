@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "thoplo";
+    src: url('thoplo.ttf') format("truetype");
+}
+
+body{
+	background-color: white;
+  font-family: 'Alef', sans-serif !important;
+}
+
+h1 {
+	text-align: center;
+	font-style: bold;
+  padding-left: 300px;
+  color: white !important;
+  text-shadow: 1px 1px 2px #222222; 
+}
+
+
+#todo{
+    padding-top: 40px;
+}
+
+.done{
+	font-style: italic;
+	text-decoration: line-through;
+}
+
+.done input[type='checkbox']{
+    
+}
+
+.button{
+    display: block;
+    padding-top: 30px;
+}
+
+.tick{
+	text-align: right;
+}
+
+.text{
+	text-align: left;
+}
+
+.header{
+	background-color: #028E9B;
+  box-shadow: 0px 5px 10px #888888;
+}
+
+div{
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.header{ 
+  background-color: #028E9B;
+  box-shadow: 0px 5px 10px #888888;
+}
+
+
+#signout{
+	visibility: hidden;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.clockpicker-popover {
+z-index: 999999 !important;
+}
+
+#date, #clock{
+    /*visibility: hidden;*/
+    display: none;
+}
