@@ -1,0 +1,14 @@
+[
+	{
+		color: "red",
+		value: "default"
+	},
+	{
+		color: "green",
+		value: "chores"
+	},
+	{
+		color: "blue",
+		value: "school"
+	}
+]

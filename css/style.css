@@ -92,3 +92,7 @@ z-index: 999999 !important;
     /*visibility: hidden;*/
     display: none;
 }
+
+.label{
+  color: black !important;
+}

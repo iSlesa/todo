@@ -1,0 +1,23 @@
+[
+	{
+		"Task" : "Dance",
+		"Label" : "personaldevelopment",
+		"Remind" : ["0","0"]
+	},
+	{
+		"Task" : "ML Assignment",
+		"Label" : "school",
+		"Remind" : ["0","0"]
+	},
+	{
+		"Task" : "Guitar",
+		"Label" : "personaldevelopment",
+		"Remind" : ["0","0"]
+	},
+	{
+		"Task" : "Laundry",
+		"Label" : "chores",
+		"Remind" : ["0","0"]
+	},
+
+]
